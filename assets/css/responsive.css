@@ -63,6 +63,22 @@
         display: none;
     }
     
+    .food-offer__info {
+        margin-top: 26%;
+    }
+
+    .food-offer__layer-03 {
+        top: 8%;
+        left: -18%;
+    }
+
+    .food-offer__heading {
+        font-size: 2.2rem;
+    }
+
+    .food-offer__name {
+        font-size: 2rem;
+    }
     
 }
 
@@ -78,6 +94,72 @@
 
     .nav-bot__right {
         margin-right: 12px;
+    }
+
+    /* Slider */
+
+    .slider__item {
+        padding-top: 54%;
+    }
+
+    .slider__dot-list {
+        left: 46%;
+    }
+
+    .slider__dot-item {
+        height: 10px;
+        min-width: 50px;
+        border-radius: 20px;
+    }
+
+    /* Food-offer */
+    .food-offer__layer-01 {
+        height: 200px;
+        width: 66%;
+        margin-left: 72px;
+    }
+
+    .food-offer__layer-02 {
+        width: 70%;
+    }
+
+    .food-offer__layer-03 {
+        top: -18%;
+        left: -10%;
+        height: 142px;
+    }
+
+    .food-offer__heading {
+        font-size: 2.5rem;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        max-width: 290px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .food-offer__name {
+        font-size: 2.2rem;
+        padding-top: 0px;
+        text-align: center;
+        width: 70%;
+    }
+
+    .food-offer__stick {
+        margin-left: 106px;
+        margin-top: 26px;
+    }
+
+    .food-food-offer__btn {
+        border-radius: 20px;
+        margin-top: 60px;
+        margin-left: 56px;
+    }
+
+    .overlay__img {
+        width: 390px;
+        height: 390px;
+        border-radius: 12px;
     }
 
     

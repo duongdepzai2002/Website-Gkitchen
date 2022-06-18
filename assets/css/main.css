@@ -1,6 +1,6 @@
 /* begin */
 .background-img {
-    background: url(/assets/img/background_app.jpg) top center no-repeat;
+    background: url(../img/background_app.jpg) top center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
@@ -302,6 +302,155 @@ html {
     cursor: pointer;
 }
 
+/* Slider */
+.slider {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 140px;
+}
+
+.slider.hide {
+    display: none;
+}
+
+.slider__item {
+    width: 100%;
+    padding-top: 46%;
+    
+    flex: 1 0 100%;
+    transition: all 0.6s ease;
+}
+
+.slider__item:first-child {
+    background: url(../img/slider_imgs/img_01) top center / contain no-repeat;
+}
+
+.slider__item:nth-child(2) {
+    background: url(../img/slider_imgs/img_02) top center / contain no-repeat;
+}
+
+.slider__item:nth-child(3) {
+    background: url(../img/slider_imgs/img_03) top center / contain no-repeat;
+}
+
+.slider__item:nth-child(4) {
+    background: url(../img/slider_imgs/img_04) top center / contain no-repeat;
+}
+
+.slider__item:nth-child(5) {
+    background: url(../img/slider_imgs/img_05) top center / contain no-repeat;
+}
+
+.slider__item:nth-child(6) {
+    background: url(../img/slider_imgs/img_06) top center / contain no-repeat;
+}
+
+.slider__dot-list {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+}
+
+.slider__dot-item {
+    background-color: #fff;
+    height: 5px;
+    min-width: 28px;
+    margin: 0 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.slider__dot-item.active {
+    background-color: var(--primary-color);
+    padding: 0 20px;
+}
+
+/* Content */
+.content {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.content.hide {
+    display: none;
+}
+
+.food-offer {
+    overflow: hidden;
+}
+
+.food-offer__layer-01 {
+    height: 400px;
+    width: 108%;
+    background: url(../img/food_slider/frames.png) center / contain no-repeat;
+    position: relative;
+    margin-left: 14px;
+}
+
+.food-offer__layer-02 {
+    width: 86%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.food-offer__layer-03 {
+    position: absolute;
+    top: -10%;
+    left: -8%;
+    height: 160px;
+}
+
+
+.food-offer__info {
+    width: 100%;
+    margin-left: 14%;
+
+}
+
+.food-offer__heading {
+    font-size: 3.6rem;
+    color: var(--white-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.food-offer__name {
+    font-size: 3rem;
+    color: var(--white-color);
+    line-height: 0;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-weight: 400;
+}
+
+.food-offer__stick {
+    display: block;
+}
+
+.food-food-offer__btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: all 0.2s linear;
+    border-radius: 16px;
+    margin-top: 70px;
+}
+
+.food-food-offer__btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
 /* Cart-form */
 .cart-form {
     height: 800px;
@@ -423,4 +572,41 @@ html {
 
 /* Overlay */
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.hide {
+    display: none;
+}
+
+.overlay__content {
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay__img {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.overlay__icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: var(--white-color);
+    font-size: 2.6rem;
+}
+
+.overlay__icon:hover {
+    opacity: 0.6;
+}
 

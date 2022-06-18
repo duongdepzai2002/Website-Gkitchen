@@ -17,6 +17,30 @@ const i = 0
 
 // Function handleEvent
 const handleEvent = function() {
+    // Click remove overLay
+    const overlay = $('.overlay')
+    const overlayIcon = $('.overlay__icon')
+    const overlayContent = $('.overlay__content')
+
+    overlayIcon.onclick = function() {
+        overlay.classList.add('hide')
+    }
+
+    overlayContent.onclick = function(e) {
+        e.stopPropagation()
+    }
+    
+    // Click => move slide
+    sliderDotList.forEach((dot, index) => {
+        dot.onclick = function() {
+            $('.slider__dot-item.active').classList.remove('active')
+            
+            this.classList.add('active')
+            sliderItem.style.marginLeft = 0 - (sliderWidth * index) + 'px'
+
+        }
+    })
+
     // Click out of element
     html.onclick = function (e) {
         navbarScanWrap.classList.remove('active')

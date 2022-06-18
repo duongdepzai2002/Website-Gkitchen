@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
+    <!-- Overlay -->
+    <div class="overlay">
+        <div class="overlay__content">
+            <img src="./assets/img/over-lay_img.jpg" alt="" class="overlay__img">
+            <i class="overlay__icon fas fa-times"></i>
+        </div>
+    </div>
+
     <div class="app">
         <div class="background-img"></div>
 
@@ -160,12 +168,48 @@
 
         <!-- Slider -->
         <div class="slider">
-            
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+
+            <ul class="slider__dot-list">
+                <li class="slider__dot-item active"></li>
+                <li class="slider__dot-item"></li>
+                <li class="slider__dot-item"></li>
+                <li class="slider__dot-item"></li>
+                <li class="slider__dot-item"></li>
+                <li class="slider__dot-item"></li>
+            </ul>
         </div>
 
         <!-- Content -->
         <div class="content">
+            <div class="content-food grid wide">
+                <div class="food-offer">
+                    <div class="row">
+                        <div class="col l-5 m-5 c-12">
+                            <div class="food-offer__img">
+                                <div class="food-offer__layer-01">
+                                    <img src="./assets/img/food_slider/img_01.webp" alt="" class="food-offer__layer-02">
+                                    <img src="./assets/img/food_slider/sticker.png" alt="" class="food-offer__layer-03">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-7 m-7 c-12">
+                            <div class="food-offer__info">
+                                <h2 class="food-offer__heading">Sản Phẩm Ngon Tuần Này</h2>
+                                <h3 class="food-offer__name">Thịt xay túi 1kg</h3>
+                                <img src="./assets/img/food_slider/stick_row.png" alt="" class="food-offer__stick">
 
+                                <button class="food-food-offer__btn btn">Chi tiết sản phẩm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Cart-form -->
