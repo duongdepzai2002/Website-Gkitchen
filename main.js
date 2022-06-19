@@ -93,6 +93,18 @@ const handleEvent = function() {
         formContainer.classList.remove('active')
         buyTag.classList.add('hide')
     }
+
+    // Open Form-login
+    const loginWrapper = $('.login-wrapper')
+    const formContainer = $('.form-container')
+
+    loginWrapper.onclick = function () {
+        formContainer.classList.add('active')
+        slider.classList.add('hide')
+        content.classList.add('hide')
+        cartForm.classList.remove('active')
+        buyTag.classList.add('hide')
+    }
     
     // Scroll hide/appear navbar
     document.onscroll = function() {
