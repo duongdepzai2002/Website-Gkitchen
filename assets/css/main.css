@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.full-width {
+    width: 100%;
+}
+
 /* Directional */
 .app.hide {
     display: none;
