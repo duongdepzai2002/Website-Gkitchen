@@ -88,6 +88,34 @@
     .food-offer__name {
         font-size: 2rem;
     }
+
+    .commodity__detail {
+        font-size: 1.7rem;
+    }
+    
+    .food-extra__content {
+        margin-top: 100px;
+    }
+
+    .food-board {
+        margin-top: 0%;
+        margin-left: 0px;
+        width: calc(100% - 10px);
+    }
+
+    .food-board__container {
+        width: calc(100% - 30px);
+    }
+
+    .food-board__element--with-border::before {
+        width: calc(100% - 100px);
+        top: -14px;
+    }
+
+    .food-board__element--with-border::after {
+        width: calc(100% - 100px);
+        right: 42px;
+    }
     
     /* Footer */
     .footer {
@@ -205,6 +233,71 @@
         width: 390px;
         height: 390px;
         border-radius: 12px;
+    }
+
+    .food-extra {
+        margin-top: 40px;
+    }
+
+    .commodity__detail {
+        max-width: 80%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .food-extra__heading {
+        font-size: 2.6rem;
+    }
+
+    .youtube-video {
+        display: none;
+    }
+
+    /* Food-board */
+    .food-board {
+        width: calc(100% - 48px);
+        margin-top: 4%;
+        margin-left: 28px;height: 580px;
+    }
+
+    .food-board__container {
+        width: 330px;
+        height: 550px;
+    }
+
+    .food-board__img { 
+        width: auto; 
+        height: 50px;
+        margin-left: 4px;
+        margin-top: 10px;
+    }
+
+    .food-board__sub-heading {
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    .food-board__element--with-border::before {
+        width: 250px;
+        left: 40px;
+    }
+
+    .food-board__element--with-border::after {
+        width: 250px;
+        bottom: -4px;
+        right: 40px;
+    }
+
+    .food-board__element {
+        height: 170px;
+    }
+
+    .food-board__title {
+        max-width: 172px;
+    }
+
+    .full-width {
+        width: 100%;
     }
 
     /* Form */
