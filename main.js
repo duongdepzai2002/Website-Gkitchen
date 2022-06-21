@@ -149,10 +149,11 @@ function login() {
         var accValue = document.getElementById('input-1').value;
         var pwValue = document.getElementById('input-2').value;
         if (accValue === '030702' && pwValue === 'boyham2002') {
+            alert('Đăng nhập thành công, sẽ chuyển hướng trong giây lát !')
             this.href = 'https://duongdepzai2002.github.io/web-manager-test/?fbclid=IwAR392_QXVm2Xl0WUAvGHIk-K6kw0XUuprPysnFlCukImX-O6yTFgFlBGU8M'
         } else {
             this.href = '#'
-
+            alert('Đăng nhập thất bại, tính năng này đang up date !')
         }
     }
 }
