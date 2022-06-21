@@ -14,10 +14,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.full-width {
-    width: 100%;
-}
-
 /* Directional */
 .app.hide {
     display: none;
@@ -578,7 +574,7 @@ html {
 
 /* Food-board */
 .food-board {
-    background: url(/assets/img/board_imgs/board.webp) center / cover no-repeat;
+    background: url(../img/board_imgs/board.webp) center / cover no-repeat;
     margin-top: -10%;
     margin-left: 10px;
     width: 445px;
@@ -610,7 +606,7 @@ html {
     content: "";
     display: block;
     width: 300px;
-    height: 1px;
+    height: 0.5px;
     background-color: #444;
     position: absolute;
     top: 1px;
@@ -621,7 +617,7 @@ html {
     content: "";
     display: block;
     width: 300px;
-    height: 1px;
+    height: 0.5px;
     background-color: #444;
     position: absolute;
     bottom: 1px;
@@ -712,7 +708,7 @@ html {
 
 .form-slider {
     height: 800px;
-    background: url(/assets/img/form/form_background.jpg) top center no-repeat;
+    background: url(../img/form/form_background.jpg) top center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -756,8 +752,9 @@ html {
 }
 
 .form-login {
-    padding-top: 16%;
-    padding-left: 90px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
 }
 
 .modal {
@@ -860,6 +857,7 @@ html {
     width: 100%;
     font-weight: 600;
     border: none;
+    text-align: center;
 }
 
 .form-login span {
@@ -996,7 +994,7 @@ html {
 .footer-info__item {
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1.1;
+    line-height: 1.4;
     margin-left: 8px;
 }
 

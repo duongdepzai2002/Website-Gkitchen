@@ -100,7 +100,7 @@
     .food-board {
         margin-top: 0%;
         margin-left: 0px;
-        width: calc(100% - 10px);
+        width: calc(100% + 7px);
     }
 
     .food-board__container {
@@ -226,7 +226,7 @@
     .food-food-offer__btn {
         border-radius: 20px;
         margin-top: 60px;
-        margin-left: 56px;
+        margin-left: 48px;
     }
 
     .overlay__img {
@@ -261,7 +261,7 @@
     }
 
     .food-board__container {
-        width: 330px;
+        width: 290px;
         height: 550px;
     }
 
@@ -279,13 +279,13 @@
 
     .food-board__element--with-border::before {
         width: 250px;
-        left: 40px;
+        left: 20px;
     }
 
     .food-board__element--with-border::after {
         width: 250px;
         bottom: -4px;
-        right: 40px;
+        right: 20px;
     }
 
     .food-board__element {
@@ -303,11 +303,6 @@
     /* Form */
     .modal {
         width: 312px;
-    }
-
-    .form-login {
-        padding-top: 16%;
-        padding-left: 56px;
     }
 
     .overlay__img {
@@ -358,7 +353,7 @@
     }
 
     .footer-info__item--with-bold {
-        margin-top: 30px;
+        margin-top: 16px;
         margin-bottom: 4px;
         font-weight: 600;
     }
